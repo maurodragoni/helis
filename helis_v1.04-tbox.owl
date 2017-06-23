@@ -1,0 +1,3933 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.fbk.eu/ontologies/virtualcoach#"
+     xml:base="http://www.fbk.eu/ontologies/virtualcoach"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vc="http://www.fbk.eu/ontologies/virtualcoach#">
+    <owl:Ontology rdf:about="http://www.fbk.eu/ontologies/virtualcoach">
+        <dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosa Maimone</dcterms:creator>
+        <dcterms:title xml:lang="en">Healthy Lifestyle Support (HeLiS) ontology</dcterms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.04</owl:versionInfo>
+        <dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Claudio Eccher</dcterms:creator>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-09</dcterms:modified>
+        <dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tania Bailoni</dcterms:creator>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-02</dcterms:issued>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.fbk.eu/ontologies/virtualcoach#</vann:preferredNamespaceUri>
+        <dcterms:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health and Wellbeing, Fondazione Bruno Kessler &lt;https://ehealth.fbk.eu&gt;</dcterms:publisher>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vc</vann:preferredNamespacePrefix>
+        <dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mauro Dragoni</dcterms:creator>
+        <dcterms:rights xml:lang="en">CreativeCommons 4.0 NonCommercial-ShareAlike &lt;https://creativecommons.org/licenses/by-nc-sa/4.0/&gt;</dcterms:rights>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#activeCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#activeCategory"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#appliesTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#appliesTo"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#command -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#command">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#foodId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#foodId">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasForbiddenCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasForbiddenCategory">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasMandatoryCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasMandatoryCategory">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasMonitoredValue -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasMonitoredValue">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasMonitoredValueInterval -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasMonitoredValueInterval">
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasOperator -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasOperator">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasPriority -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasPriority">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasQuantity -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasQuantity"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasRuleId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasRuleId">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#id"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#interfaceLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#interfaceLabel">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#isRecipeConsumedFood -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#isRecipeConsumedFood"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#isUnspecifiedFood -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#isUnspecifiedFood"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#lowerBound -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#lowerBound">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#monitoredEntity -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#monitoredEntity">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#monitoredEntityType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#monitoredEntityType">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#productCategory -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#productCategory">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#timing -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#timing">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#upperBound -->
+
+    <owl:AnnotationProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#upperBound">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#domain -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#domain"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#belongsProfile -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#belongsProfile">
+        <owl:inverseOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#containsUser"/>
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#consumed -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#consumed">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+        <rdfs:label xml:lang="en">consumed</rdfs:label>
+        <rdfs:label xml:lang="it">ha consumato</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#contains">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:label xml:lang="it">contiene</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#containsUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#containsUser">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Profile"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasActivity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#EffortCaloriesEquivalent"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasConsumedFood -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasConsumedFood">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ConsumedFood"/>
+        <rdfs:label xml:lang="it">ha Consumato Cibo</rdfs:label>
+        <rdfs:label xml:lang="en">has Consumed Food</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasFood -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasFood">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ConsumedFood"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#EffortCaloriesEquivalent"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RecipeFood"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+        <rdfs:label xml:lang="it">ha Cibo</rdfs:label>
+        <rdfs:label xml:lang="en">has Food</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasNutrient -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasNutrient">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:label xml:lang="it">ha Nutriente</rdfs:label>
+        <rdfs:label xml:lang="en">has Nutrient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasRecipeFood -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasRecipeFood">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Recipe"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#RecipeFood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasUser">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+        <rdfs:label xml:lang="it">ha Utente</rdfs:label>
+        <rdfs:label xml:lang="en">has User</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationMeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationMeal">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationRule">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationUser">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#monitor -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#monitor">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#performed -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#performed">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#activityDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#activityDuration">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#EffortCaloriesEquivalent"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#activityEndTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#activityEndTimestamp">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#activityStartTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#activityStartTimestamp">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#amountCalories -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#amountCalories">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">amount of Calories</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; Calorie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#amountEnergy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#amountEnergy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">amount of Energy</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; Energia</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#amountFood -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#amountFood">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ConsumedFood"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#EffortCaloriesEquivalent"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Recipe"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RecipeFood"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">amount of Food</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; Cibo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#amountNutrient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#amountNutrient">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">amount of Nutrient</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; Nutriente</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#amountWater -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#amountWater">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">amount of Water</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; Acqua</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#bounds -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#bounds">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ViolationInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#duration">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Timespan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ediblePart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ediblePart">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">edible part</rdfs:label>
+        <rdfs:label xml:lang="it">parte edibile</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasDailyCaloricIntake -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasDailyCaloricIntake">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasMETCorrection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasMETCorrection">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasMETValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasMETValue"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasRuleDefinition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasRuleDefinition">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasTimestamp">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="it">ha etichetta temporale</rdfs:label>
+        <rdfs:label xml:lang="en">has timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasUnitKCalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasUnitKCalValue"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasUserId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasUserId">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationEndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationEndTime">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationEntity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationEntity">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationEntityType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationEntityType">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationExpectedQuantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationExpectedQuantity">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationHistory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationHistory">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationLevel">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ViolationInterval"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationPriority">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationQuantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationQuantity">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationRuleId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationRuleId">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationStartTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationStartTime">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationTiming -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationTiming">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationValidityTimespan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationValidityTimespan">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#unit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#unit">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
+        <rdfs:label xml:lang="it">unita&apos;</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Activity -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Activity">
+        <rdfs:comment xml:lang="en">This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+        <rdfs:label xml:lang="it">Attivita&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AdultBovineFattyRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineFattyRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Bovine Fatty Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Bovine Fatty Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Grassa di Bovino Adulto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AdultBovineLeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Bovine Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Bovine Lean Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Magra di Bovino Adulto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AdultGoatLeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AdultGoatLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Goat Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Goat Lean Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Magra di Capra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AdultSheepFattyRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AdultSheepFattyRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Sheep Fatty Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Sheep Fatty Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Grassa di Pecora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AdultSheepLeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AdultSheepLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Sheep Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Sheep Lean Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Magra di Pecora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AgedCheese -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cheese"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Aged Cheese category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Aged Cheese</rdfs:label>
+        <rdfs:label xml:lang="it">Formaggi Stagionati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Alanine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Alanine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Alanine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alanina</rdfs:label>
+        <rdfs:label xml:lang="en">Alanine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Alcohol -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Alcohol">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Alcohol amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Alcohol</rdfs:label>
+        <rdfs:label xml:lang="it">Alcool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beverages"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Alcoholic Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Alcoholic Beverages</rdfs:label>
+        <rdfs:label xml:lang="it">Bevande Alcoliche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Algae -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Algae">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Algae category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Algae</rdfs:label>
+        <rdfs:label xml:lang="it">Alghe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Aminoacid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Aminoacid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Aminoacid category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Aminoacid</rdfs:label>
+        <rdfs:label xml:lang="it">Amminoacidi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AnimalFats -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFatsAndOils"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Animal Fats category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Fats</rdfs:label>
+        <rdfs:label xml:lang="it">Grasso Animale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AnimalFatsAndOils -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AnimalFatsAndOils">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Animal Fats and Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Fats and Oils</rdfs:label>
+        <rdfs:label xml:lang="it">Grassi e Oli Animali</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AnimalLipid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AnimalLipid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Animal Lipid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Lipids</rdfs:label>
+        <rdfs:label xml:lang="it">Lipidi Animali</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Animal Milk category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Milk</rdfs:label>
+        <rdfs:label xml:lang="it">Latte Animale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AnimalProtein -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AnimalProtein">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Protein"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Animal Protein amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Protein</rdfs:label>
+        <rdfs:label xml:lang="it">Proteine Animali</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Aminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Apolar Aminoacid category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Amminoacidi Apolari</rdfs:label>
+        <rdfs:label xml:lang="en">Apolar Aminoacid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ArachidicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ArachidicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Arachidic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Arachidico</rdfs:label>
+        <rdfs:label xml:lang="en">Arachidic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ArachidonicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ArachidonicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Arachidonic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Arachidonico</rdfs:label>
+        <rdfs:label xml:lang="en">Arachidonic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Arginine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Arginine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Arginine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Arginina</rdfs:label>
+        <rdfs:label xml:lang="en">Arginine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AsparticAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AsparticAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Aspartic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Aspartico</rdfs:label>
+        <rdfs:label xml:lang="en">Aspartic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#BasicFood -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BasicFood">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Basic Food category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alimento Base</rdfs:label>
+        <rdfs:label xml:lang="en">Basic Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Beer -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Beer">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Beer category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Beer</rdfs:label>
+        <rdfs:label xml:lang="it">Birra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#BehenicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BehenicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Behenic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Beenico</rdfs:label>
+        <rdfs:label xml:lang="en">Behenic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#BetaCarotene -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BetaCarotene">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Beta-Carotene amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Beta Carotene</rdfs:label>
+        <rdfs:label xml:lang="en">Beta-Carotene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Beverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Beverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande</rdfs:label>
+        <rdfs:label xml:lang="en">Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Bicycling -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Bicycling">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Bicycling category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Andare in Bicicletta</rdfs:label>
+        <rdfs:label xml:lang="en">Bicycling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Biotin -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Biotin">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Biotin amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Biotin</rdfs:label>
+        <rdfs:label xml:lang="it">Biotina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Bicuits and Crackers category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bicuits and Crackers</rdfs:label>
+        <rdfs:label xml:lang="it">Biscotti e Crackers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Bread -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Bread">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Bread category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bread</rdfs:label>
+        <rdfs:label xml:lang="it">Pane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Breakfast -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Breakfast">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+        <rdfs:comment xml:lang="en">Concept denoting meals representing a Breakfast consumed by a user.</rdfs:comment>
+        <rdfs:label xml:lang="en">Breakfast</rdfs:label>
+        <rdfs:label xml:lang="it">Colazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ButyricCaproicCaprylicCapricAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ButyricCaproicCaprylicCapricAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to the sum of Butyric Caproic Caprylic and Capric Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Somma degli Acidi Butirrico Caproico Caprilico e Caprico</rdfs:label>
+        <rdfs:label xml:lang="en">Sum of Butyric Caproic Caprylic and Capric Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Calcium -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Calcium">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Calcium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Calcio</rdfs:label>
+        <rdfs:label xml:lang="en">Calcium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CandiedFruits -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CandiedFruits">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Candied Fruits category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Candied Fruits</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta Candita</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Candy -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Candy">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Candy category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Candy</rdfs:label>
+        <rdfs:label xml:lang="it">Caramelle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CannedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CannedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Canned Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Canned Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne in Scatola</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CannedOrCookedFruit -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CannedOrCookedFruit">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Canned or Cooked Fruit category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Canned or Cooked Fruit</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta in Scatola o Cotta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CannedVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CannedVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Marinated Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Marinated Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure Sott&apos;Olio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Carbs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Carbs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Carbs amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carboidrati</rdfs:label>
+        <rdfs:label xml:lang="en">Carbs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CarbsSoluble -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CarbsSoluble">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Soluble Carbs amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carboidrati Solubili</rdfs:label>
+        <rdfs:label xml:lang="en">Soluble Carbs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cereals -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cereals">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cereals category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cereali</rdfs:label>
+        <rdfs:label xml:lang="en">Cereals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cereal and Grain Products category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cereal and Grain Products</rdfs:label>
+        <rdfs:label xml:lang="it">Cereali e Prodotti Derivati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cheese -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cheese">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cheese category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cheese</rdfs:label>
+        <rdfs:label xml:lang="it">Formaggio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Chlorine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Chlorine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Chlorine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Chlorine</rdfs:label>
+        <rdfs:label xml:lang="it">Cloro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Chocolate and Cocoa category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Chocolate and Cocoa</rdfs:label>
+        <rdfs:label xml:lang="it">Cioccolato e Cacao</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cholesterol -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cholesterol">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Cholesterol amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cholesterol</rdfs:label>
+        <rdfs:label xml:lang="it">Colesterolo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beverages"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Coffee and Substitutes category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Caffe e Sostituti</rdfs:label>
+        <rdfs:label xml:lang="en">Coffee and Substitutes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ColdCuts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ColdCuts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cold Cuts category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cold Cuts</rdfs:label>
+        <rdfs:label xml:lang="it">Salumi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ComposedFood -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ComposedFood">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+                                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Dressing"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="it">Alimento Composto</rdfs:label>
+        <rdfs:label xml:lang="en">Composed Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ConditioningExercise -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ConditioningExercise">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Conditioning Exercise category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Conditioning Exercise</rdfs:label>
+        <rdfs:label xml:lang="it">Sport da Palestra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ConsumedFood -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ConsumedFood">
+        <rdfs:comment xml:lang="en">This concept enables the reification of the relationships between a user and the amount of a specific food consumed during a specific meal.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cibo Consumato</rdfs:label>
+        <rdfs:label xml:lang="en">Consumed Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Copper -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Copper">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Copper amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Copper</rdfs:label>
+        <rdfs:label xml:lang="it">Rame</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CornMealMush -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CornMealMush">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cornmeal Mush category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cornmeal Mush</rdfs:label>
+        <rdfs:label xml:lang="it">Polenta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cream -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cream">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cream category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cream</rdfs:label>
+        <rdfs:label xml:lang="it">Crema</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Culinary Erbs category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Culinary Erbs</rdfs:label>
+        <rdfs:label xml:lang="it">Erbe Aromatiche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cystine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cystine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Cystine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cistina</rdfs:label>
+        <rdfs:label xml:lang="en">Cystine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DHAAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DHAAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to DHA Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido DHA</rdfs:label>
+        <rdfs:label xml:lang="en">DHA Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Dancing -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Dancing">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Dancing category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ballo e Danza</rdfs:label>
+        <rdfs:label xml:lang="en">Dancing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Day -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Day">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Timespan"/>
+        <rdfs:label xml:lang="en">Day</rdfs:label>
+        <rdfs:label xml:lang="it">Giornata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Dessert -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Dessert">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dessert category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dessert</rdfs:label>
+        <rdfs:label xml:lang="it">Dessert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DietaryFiber -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DietaryFiber">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Dietary Fiber amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dietary Fiber</rdfs:label>
+        <rdfs:label xml:lang="it">Fibra Alimentare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Dinner -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Dinner">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+        <rdfs:comment xml:lang="en">Concept denoting meals representing a Dinner consumed by a user.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cena</rdfs:label>
+        <rdfs:label xml:lang="en">Dinner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Dressing -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Dressing">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dressing category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Condimento</rdfs:label>
+        <rdfs:label xml:lang="en">Dressing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DryAlgae -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DryAlgae">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Algae"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dry Algae category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alghe Secche</rdfs:label>
+        <rdfs:label xml:lang="en">Dry Algae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DryCulinaryErbs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DryCulinaryErbs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dry Culinary Erbs category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dry Culinary Erbs</rdfs:label>
+        <rdfs:label xml:lang="it">Erbe Aromatiche Secche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DryFruits -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DryFruits">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dry Fruits category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dry Fruits</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta Secca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DryMushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DryMushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dry Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dry Mushrooms</rdfs:label>
+        <rdfs:label xml:lang="it">Funghi Secchi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#EPAAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#EPAAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to EPA Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido EPA</rdfs:label>
+        <rdfs:label xml:lang="en">EPA Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#EffortCaloriesEquivalent -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#EffortCaloriesEquivalent">
+        <rdfs:comment xml:lang="en">This concept enables the reification of the relationships between a user, his/her body features and the energy consuption associated with each activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Effort Calories Equivalent</rdfs:label>
+        <rdfs:label xml:lang="it">Equivalente in Calorie dello Sforzo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Eggs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Eggs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Eggs category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Eggs</rdfs:label>
+        <rdfs:label xml:lang="it">Uova</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#EicosenoicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#EicosenoicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Eicosenoic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Eicosenoico</rdfs:label>
+        <rdfs:label xml:lang="en">Eicosenoic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ErucicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ErucicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Erucic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Erucico</rdfs:label>
+        <rdfs:label xml:lang="en">Erucic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fats and Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fats and Oils</rdfs:label>
+        <rdfs:label xml:lang="it">Grassi e Oli</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#RedMeat"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fatty Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa Grassa</rdfs:label>
+        <rdfs:label xml:lang="en">Fatty Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fatty White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Grassa</rdfs:label>
+        <rdfs:label xml:lang="en">Fatty White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Fish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fish and Seafood category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fish and Seafood</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce, Molluschi e Crostacei</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FishingHunting -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FishingHunting">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Fishing and Hunting category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Caccia e Pesca</rdfs:label>
+        <rdfs:label xml:lang="en">Fishing and Hunting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Flour -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Flour">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Flour category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Farine</rdfs:label>
+        <rdfs:label xml:lang="en">Flour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FolicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FolicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Folic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Folico</rdfs:label>
+        <rdfs:label xml:lang="en">Folic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Food -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Food">
+        <rdfs:comment xml:lang="en">This is the root concept for the Food branch. All sub-concepts represent a specific category of foods.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alimento</rdfs:label>
+        <rdfs:label xml:lang="en">Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshAlgae -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshAlgae">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Algae"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Algae category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alghe Fresche</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Algae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshCereals -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cereals"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Cereals category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cereali Freschi</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Cereals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshCheese -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshCheese">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cheese"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Cheese category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Formaggi Freschi</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Cheese</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshCulinaryErbs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshCulinaryErbs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Culinary Erbs category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Erbe Aromatiche Fresche</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Culinary Erbs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshFish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshFish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Fresco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshFruits -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Fruits category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Fruits</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta Fresca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshLegumes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshLegumes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Legumes category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Legumes</rdfs:label>
+        <rdfs:label xml:lang="it">Legumi Freschi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mollusc"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Mollusc category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Mollusc</rdfs:label>
+        <rdfs:label xml:lang="it">Molluschi Freschi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshMushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshMushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mushrooms"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="it">Funghi Freschi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Shellfish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Shellfish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Crostacei Freschi</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Shellfish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshStarchyVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshStarchyVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Starchy Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Starchy Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure Amidacee Fresche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyFreeVegetables"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Starchy Free Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Starchy Free Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure ed Ortaggi Freschi a Basso Contenuto di Amido</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FrozenVegetablesAndLegumes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FrozenVegetablesAndLegumes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen Vegetables and Legumes category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen Vegetables and Legumes</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure e Legumi Surgelati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Fructose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Fructose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Fructose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fructose</rdfs:label>
+        <rdfs:label xml:lang="it">Fruttosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FruitBasedBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FruitBasedBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fruit Based Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande di Frutta</rdfs:label>
+        <rdfs:label xml:lang="en">Fruit Based Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FruitJuices -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FruitJuices">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetBeveragesAndJuices"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fruit Juices category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fruit Juices</rdfs:label>
+        <rdfs:label xml:lang="it">Succhi di Frutta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FruitPeel -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FruitPeel">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fruit Peel category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fruit Peel</rdfs:label>
+        <rdfs:label xml:lang="it">Scorza di Frutta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Fruits -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Fruits">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fruits category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fruits</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Galactose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Galactose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Galactose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Galactose</rdfs:label>
+        <rdfs:label xml:lang="it">Galattosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Glucose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Glucose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Glucose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Glucose</rdfs:label>
+        <rdfs:label xml:lang="it">Glucosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#GlutamicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#GlutamicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Glutamic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Glutammico</rdfs:label>
+        <rdfs:label xml:lang="en">Glutamic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Glycine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Glycine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Glycine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Glicina</rdfs:label>
+        <rdfs:label xml:lang="en">Glycine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#GoatLeanWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#GoatLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Goat Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra di Capretto</rdfs:label>
+        <rdfs:label xml:lang="en">Goat Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Histidine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Histidine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Histidine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Histidine</rdfs:label>
+        <rdfs:label xml:lang="it">Istidina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#HomeActivity -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#HomeActivity">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Home Activity category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; Domestiche</rdfs:label>
+        <rdfs:label xml:lang="en">Home Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#HomeRepair -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#HomeRepair">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Home Repairs category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bricolage e Riparazioni Domestiche</rdfs:label>
+        <rdfs:label xml:lang="en">Home Repairs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#IceCream -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#IceCream">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Ice Cream category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Gelato</rdfs:label>
+        <rdfs:label xml:lang="en">Ice Cream</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Inactivity -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Inactivity">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Inactivity category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Inactivity</rdfs:label>
+        <rdfs:label xml:lang="it">Riposo ed Inattivita&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Iodine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Iodine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Iodine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Iodine</rdfs:label>
+        <rdfs:label xml:lang="it">Iodio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Iron -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Iron">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Iron amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ferro</rdfs:label>
+        <rdfs:label xml:lang="en">Iron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Isoleucine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Isoleucine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Isoleucine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Isoleucina</rdfs:label>
+        <rdfs:label xml:lang="en">Isoleucine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Jam -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Jam">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Jam category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Jam</rdfs:label>
+        <rdfs:label xml:lang="it">Marmellata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Lactose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Lactose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Lactose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lactose</rdfs:label>
+        <rdfs:label xml:lang="it">Lattosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LambFattyWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LambFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lamb Fatty White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Grassa di Agnello</rdfs:label>
+        <rdfs:label xml:lang="en">Lamb Fatty White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LambLeanWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LambLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lamb Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra di Agnello</rdfs:label>
+        <rdfs:label xml:lang="en">Lamb Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LauricAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LauricAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Lauric Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Laurico</rdfs:label>
+        <rdfs:label xml:lang="en">Lauric Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LawnGarden -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LawnGarden">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Lawn and Garden Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; in Prato e Giardino</rdfs:label>
+        <rdfs:label xml:lang="en">Lawn and Garden Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LeanGameMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LeanGameMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#OtherMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lean Game Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne di Selvaggina Magra</rdfs:label>
+        <rdfs:label xml:lang="en">Lean Game Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#RedMeat"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa Magra</rdfs:label>
+        <rdfs:label xml:lang="en">Lean Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra</rdfs:label>
+        <rdfs:label xml:lang="en">Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Legumes and Legume Products category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Legumes and Legume Products</rdfs:label>
+        <rdfs:label xml:lang="it">Legumi e Prodotti a Base di Legumi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Leucine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Leucine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Leucine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Leucina</rdfs:label>
+        <rdfs:label xml:lang="en">Leucine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LinoleicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LinoleicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Linoleic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Linoleico</rdfs:label>
+        <rdfs:label xml:lang="en">Linoleic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LinolenicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LinolenicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Linolenic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Linolenico</rdfs:label>
+        <rdfs:label xml:lang="en">Linolenic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Lipid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Lipid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Lipids amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lipidi</rdfs:label>
+        <rdfs:label xml:lang="en">Lipids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Lunch -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Lunch">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+        <rdfs:comment xml:lang="en">Concept denoting meals representing a Lunch consumed by a user.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+        <rdfs:label xml:lang="it">Pranzo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Lysine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Lysine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Lysine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lisina</rdfs:label>
+        <rdfs:label xml:lang="en">Lysine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Magnesium -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Magnesium">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Magnesium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Magnesio</rdfs:label>
+        <rdfs:label xml:lang="en">Magnesium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Maltose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Maltose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Maltose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Maltose</rdfs:label>
+        <rdfs:label xml:lang="it">Maltosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Manganese -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Manganese">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Manganese amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manganese</rdfs:label>
+        <rdfs:label xml:lang="it">Manganese</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MarinatedFish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MarinatedFish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Marinated Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Marinated Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Sott&apos;Olio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MarinatedMushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MarinatedMushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Preserved Marinated Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Funghi Conservati Sott&apos;Olio</rdfs:label>
+        <rdfs:label xml:lang="en">Preserved Marinated Mushrooms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Meal -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meal">
+        <rdfs:comment xml:lang="en">This concept is the abstract representation of the meals that a user can consume during a day. Sub-concepts represent specific types of meals.</rdfs:comment>
+        <rdfs:label xml:lang="en">Meal</rdfs:label>
+        <rdfs:label xml:lang="it">Pasto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Meat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne</rdfs:label>
+        <rdfs:label xml:lang="en">Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Methionine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Methionine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Methionine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Methionine</rdfs:label>
+        <rdfs:label xml:lang="it">Metionina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Milk and Dairy Products category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Latte e Prodotti Derivati</rdfs:label>
+        <rdfs:label xml:lang="en">Milk and Dairy Products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Milk and Yogurt category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Latte e Yogurt</rdfs:label>
+        <rdfs:label xml:lang="en">Milk and Yogurt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Mineral -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Mineral">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Mineral category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Minerali</rdfs:label>
+        <rdfs:label xml:lang="en">Minerals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Miscellaneous -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Miscellaneous">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Miscellaneous category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; Varie</rdfs:label>
+        <rdfs:label xml:lang="en">Miscellaneous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Mollusc -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Mollusc">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Mollusc category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mollusc</rdfs:label>
+        <rdfs:label xml:lang="it">Molluschi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule">
+        <rdfs:comment xml:lang="en">This concept enables the definition of rules that can be associated to a specific user or to a specific profile in order to support monitoring activities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Monitoring Rule</rdfs:label>
+        <rdfs:label xml:lang="it">Regole di Monitoraggio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MonounsaturatedLipid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MonounsaturatedLipid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Monounsaturated Fat amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Grassi Monoinsaturi</rdfs:label>
+        <rdfs:label xml:lang="en">Monounsaturated Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Mushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Mushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Funghi</rdfs:label>
+        <rdfs:label xml:lang="en">Mushrooms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MusicPlaying -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MusicPlaying">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Music Playing category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Playing</rdfs:label>
+        <rdfs:label xml:lang="it">Suonare Musica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MyristicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MyristicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Myristic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Miristico</rdfs:label>
+        <rdfs:label xml:lang="en">Myristic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MyristoleicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MyristoleicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Myristoleic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Miristoleico</rdfs:label>
+        <rdfs:label xml:lang="en">Myristoleic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Niacin -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Niacin">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Niacin (Vitamin B3) amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Niacin</rdfs:label>
+        <rdfs:label xml:lang="it">Niacina</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin B3</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beverages"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Non-Alcoholic Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande Analcoliche</rdfs:label>
+        <rdfs:label xml:lang="en">Non-Alcoholic Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Nuts, Seeds and Olives category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Noci, Frutta a Guscio, Semi e Olive</rdfs:label>
+        <rdfs:label xml:lang="en">Nuts, Seeds and Olives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Nutrient -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Nutrient">
+        <rdfs:comment xml:lang="en">This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food.</rdfs:comment>
+        <rdfs:label xml:lang="en">Nutrient</rdfs:label>
+        <rdfs:label xml:lang="it">Nutriente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Nuts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Nuts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Nuts category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Noci e Frutta a Guscio</rdfs:label>
+        <rdfs:label xml:lang="en">Nuts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Occupation -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Occupation">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Occupation category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lavori ed Occupazioni Varie</rdfs:label>
+        <rdfs:label xml:lang="en">Occupation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#OleicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#OleicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Oleic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Oleico</rdfs:label>
+        <rdfs:label xml:lang="en">Oleic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#OlivesAndOliveProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#OlivesAndOliveProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Olives and Olive Products category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Olive e Prodotti di Olive</rdfs:label>
+        <rdfs:label xml:lang="en">Olives and Olive Products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#OtherLeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#OtherLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Other Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Altra Carne Rossa Magra</rdfs:label>
+        <rdfs:label xml:lang="en">Other Lean Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#OtherMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#OtherMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Other Meat Types category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Altri Tipi di Carne</rdfs:label>
+        <rdfs:label xml:lang="en">Other Meat Types</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#OtherPolyunsaturatedLipid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#OtherPolyunsaturatedLipid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to other Polyunsaturated Fat amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Altri Grassi Polinsaturi</rdfs:label>
+        <rdfs:label xml:lang="en">Other Polyunsaturated Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PalmiticAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PalmiticAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Palmitic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Palmitico</rdfs:label>
+        <rdfs:label xml:lang="en">Palmitic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PalmitoleicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PalmitoleicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Palmitoleic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Palmitoleico</rdfs:label>
+        <rdfs:label xml:lang="en">Palmitoleic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PantothenicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PantothenicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Pantothenic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Pantotenico</rdfs:label>
+        <rdfs:label xml:lang="en">Pantothenic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Pasta -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Pasta">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WheatFour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pasta category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pasta</rdfs:label>
+        <rdfs:label xml:lang="it">Pasta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Pastry -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Pastry">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pastry category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Paste e Pasticcini</rdfs:label>
+        <rdfs:label xml:lang="en">Pastry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity">
+        <rdfs:comment xml:lang="en">This concept enables the reification of the relationships between a user and the duration of a specific performed activity.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; Svolta</rdfs:label>
+        <rdfs:label xml:lang="en">Performed Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Phenylalanine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Phenylalanine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Phenylalanine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Fenilanina</rdfs:label>
+        <rdfs:label xml:lang="en">Phenylalanine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Phosphorus -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Phosphorus">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Phosphorus amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Fosforo</rdfs:label>
+        <rdfs:label xml:lang="en">Phosphorus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PizzaAndFocacciaBread -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PizzaAndFocacciaBread">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pizzas and &quot;Focaccia&quot; Breadcategory.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pizzas and &quot;Focaccia&quot; Bread</rdfs:label>
+        <rdfs:label xml:lang="it">Pizze e Focacce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Aminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Polar Aminoacid category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Amminoacidi olari</rdfs:label>
+        <rdfs:label xml:lang="en">Polar Aminoacid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PolyunsaturatedLipid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PolyunsaturatedLipid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Polyunsaturated Fat amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Grassi Polinsaturi</rdfs:label>
+        <rdfs:label xml:lang="en">Polyunsaturated Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PorkFattyRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PorkFattyRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pork Fatty Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa Grassa di Suino</rdfs:label>
+        <rdfs:label xml:lang="en">Pork Fatty Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PorkLeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PorkLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pork Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa Magra di Suino</rdfs:label>
+        <rdfs:label xml:lang="en">Pork Lean Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Potassium -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Potassium">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Potassium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Potassio</rdfs:label>
+        <rdfs:label xml:lang="en">Potassium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Poultry with Skin or Poultry Fatty Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pollame con Pelle</rdfs:label>
+        <rdfs:label xml:lang="en">Poultry with Skin or Poultry Fatty Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Skinned Poultry Lean Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pollame Senza Pelle</rdfs:label>
+        <rdfs:label xml:lang="en">Skinned Poultry Lean Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PowderedMilk -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PowderedMilk">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Powdered Milk category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Latte in Polvere</rdfs:label>
+        <rdfs:label xml:lang="en">Powdered Milk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cereals"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Cereals category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cereali Confezionati e Lavorati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Cereals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pesce Confezionato o Lavorato</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Fish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Legumes category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Legumi Confezionati e Lavorati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Legumes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedMollusc -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedMollusc">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mollusc"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Mollusc category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Molluschi Confezionati e Lavorati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Mollusc</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mushrooms"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Funghi Confezionati e Lavorati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Mushrooms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedShellfish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedShellfish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Shellfish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Shellfish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Crostacei Confezionati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Shellfish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedStarchyVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedStarchyVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Starchy Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Processed Starchy Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure Amidacee Conservate e Lavorate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyFreeVegetables"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Starchy Free Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Processed Starchy Free Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure e Ortaggi a Basso Contenuto di Starch Conservati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Profile -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Profile">
+        <rdfs:comment xml:lang="en">This concept enables the representation of different types of user profiles. Examples are profiles denoting people with specific allergies or dietary habits.</rdfs:comment>
+        <rdfs:label xml:lang="en">Profile</rdfs:label>
+        <rdfs:label xml:lang="it">Profilo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Proline -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Proline">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Proline amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Prolina</rdfs:label>
+        <rdfs:label xml:lang="en">Proline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Protein -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Protein amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Protein</rdfs:label>
+        <rdfs:label xml:lang="it">Proteine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#RabbitFattyWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RabbitFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Rabbit Fatty White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Grassa di Coniglio</rdfs:label>
+        <rdfs:label xml:lang="en">Rabbit Fatty White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#RabbitLeanWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RabbitLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Rabbit Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra di Coniglio</rdfs:label>
+        <rdfs:label xml:lang="en">Rabbit Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Recipe -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Recipe">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+        <rdfs:comment xml:lang="en">Concept denoting Recepies containing one or more Recipe Food.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recipe</rdfs:label>
+        <rdfs:label xml:lang="it">Ricette</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#RecipeFood -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RecipeFood">
+        <rdfs:comment xml:lang="en">Recipes are described by a list of instances of the concept Food. The RecipeFood concept reifies the relationship between a Recipe, the specific Food and its amount in the Recipe.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ingredienti Ricette</rdfs:label>
+        <rdfs:label xml:lang="en">Recipe Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#RedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+        <owl:disjointWith rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa</rdfs:label>
+        <rdfs:label xml:lang="en">Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ReligiousActivities -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ReligiousActivities">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Religious Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; Religiose</rdfs:label>
+        <rdfs:label xml:lang="en">Religious Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#RetinolEquivalent -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RetinolEquivalent">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Retinol Equivalent amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Retinol Equivalent</rdfs:label>
+        <rdfs:label xml:lang="it">Retinolo Equivalente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Rice -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Rice">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Rice category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rice</rdfs:label>
+        <rdfs:label xml:lang="it">Riso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#RoastedNuts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RoastedNuts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nuts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Roasted Nuts category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Noci Tostate</rdfs:label>
+        <rdfs:label xml:lang="en">Roasted Nuts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Running -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Running">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Running category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Correre</rdfs:label>
+        <rdfs:label xml:lang="en">Runing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Salt -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Salt">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Salt category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Sale</rdfs:label>
+        <rdfs:label xml:lang="en">Salt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SaturatedLipid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SaturatedLipid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Saturated Lipids amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lipidi Saturi</rdfs:label>
+        <rdfs:label xml:lang="en">Saturated Lipids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Sausages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Sausages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sausages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Insaccati</rdfs:label>
+        <rdfs:label xml:lang="en">Sausages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Salt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Spices"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sausages and Cold Cuts category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Salumi e Insaccati</rdfs:label>
+        <rdfs:label xml:lang="en">Sausages and Cold Cuts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Seeds -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Seeds">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Seeds category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Seeds</rdfs:label>
+        <rdfs:label xml:lang="it">Semi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Selenium -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Selenium">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Selenium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Selenio</rdfs:label>
+        <rdfs:label xml:lang="en">Selenium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SelfCare -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SelfCare">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Self Care category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cura Personale</rdfs:label>
+        <rdfs:label xml:lang="en">Self Care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Serina -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Serina">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Serina amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Serina</rdfs:label>
+        <rdfs:label xml:lang="it">Serina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SexualActivity -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SexualActivity">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Sexual Activity category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; Sessuale</rdfs:label>
+        <rdfs:label xml:lang="en">Sexual Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Shellfish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Shellfish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Shellfish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Crostacei</rdfs:label>
+        <rdfs:label xml:lang="en">Shellfish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Snack -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Snack">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+        <rdfs:comment xml:lang="en">Concept denoting meals representing a Snack consumed by a user.</rdfs:comment>
+        <rdfs:label xml:lang="it">Merenda</rdfs:label>
+        <rdfs:label xml:lang="en">Snack</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Sodium -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Sodium">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Sodium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Sodio</rdfs:label>
+        <rdfs:label xml:lang="en">Sodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Soups -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Soups">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ComposedFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Soups category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soups</rdfs:label>
+        <rdfs:label xml:lang="it">Zuppe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SoyProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SoyProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Soy Products category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Prodotti a Base di Soia</rdfs:label>
+        <rdfs:label xml:lang="en">Soy Products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SpecialBread -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SpecialBread">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Bread"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Spercial Bread category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pane Speciale</rdfs:label>
+        <rdfs:label xml:lang="en">Spercial Bread</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Spices -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Spices">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Spices category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Spezie</rdfs:label>
+        <rdfs:label xml:lang="en">Spices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Spirits and Liquor category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Spirits and Liquor</rdfs:label>
+        <rdfs:label xml:lang="it">Superalcolici</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Sports -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Sports">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Sports category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Sport</rdfs:label>
+        <rdfs:label xml:lang="en">Sports</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Starch -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Starch">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Starch amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Amido</rdfs:label>
+        <rdfs:label xml:lang="en">Starch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#StarchyFreeVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#StarchyFreeVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vegetables"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Starchy Free Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Starchy Free Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure con Basso Contenuto di amido</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vegetables"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Starchy Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Starchy Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure Amidacee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#StearicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#StearicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Stearic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Stearico</rdfs:label>
+        <rdfs:label xml:lang="en">Stearic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Sucrose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Sucrose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Sucrose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Saccarosio</rdfs:label>
+        <rdfs:label xml:lang="en">Sucrose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sugar category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sugar</rdfs:label>
+        <rdfs:label xml:lang="it">Zucchero</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sugar and Sweets category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sugar and Sweets</rdfs:label>
+        <rdfs:label xml:lang="it">Zucchero e Dolci</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Sulfur -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Sulfur">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Sulfur amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sulfur</rdfs:label>
+        <rdfs:label xml:lang="it">Zolfo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SweetBeveragesAndJuices -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SweetBeveragesAndJuices">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sweet Beverages and Juices category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande Zuccherate e Succhi</rdfs:label>
+        <rdfs:label xml:lang="en">Sweet Beverages and Juices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SweetSnacksAndBrioches -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SweetSnacksAndBrioches">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sweet Snacks and Brioches category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Merendine Dolci e Brioches</rdfs:label>
+        <rdfs:label xml:lang="en">Sweet Snacks and Brioches</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sweet Spreads category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Dolci Spalmabili</rdfs:label>
+        <rdfs:label xml:lang="en">Sweet Spreads</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SweetsAndCakesMakingProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SweetsAndCakesMakingProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Products to Make Sweets and Cakes category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Prodotti per Fare Dolci e Torte</rdfs:label>
+        <rdfs:label xml:lang="en">Products to Make Sweets and Cakes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Syrups -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Syrups">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Syrups category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Sciroppi</rdfs:label>
+        <rdfs:label xml:lang="en">Syrups</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#TableCream -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#TableCream">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Table Cream category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Panna</rdfs:label>
+        <rdfs:label xml:lang="en">Table Cream</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#TeaBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#TeaBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Tea Based Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande a Base di Te&apos;</rdfs:label>
+        <rdfs:label xml:lang="en">Tea Based Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Threonine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Threonine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Threonine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Threonine</rdfs:label>
+        <rdfs:label xml:lang="it">Treonina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Timespan -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Timespan">
+        <rdfs:comment xml:lang="en">This concept enables the definition of custom time period exploited for monitoring users.</rdfs:comment>
+        <rdfs:label xml:lang="it">Intervallo Temporale</rdfs:label>
+        <rdfs:label xml:lang="en">Timespan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#TomatoSauces -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#TomatoSauces">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Tomato Sauces category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Salse di Pomodoro</rdfs:label>
+        <rdfs:label xml:lang="en">Tomato Sauces</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Transportation -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Transportation category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transportation</rdfs:label>
+        <rdfs:label xml:lang="it">Trasporti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Tryptophan -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Tryptophan">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Tryptophan amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Triptofano</rdfs:label>
+        <rdfs:label xml:lang="en">Tryptophan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Tyrosine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Tyrosine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Tyrosine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Tirosina</rdfs:label>
+        <rdfs:label xml:lang="en">Tyrosine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#User -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#User">
+        <rdfs:comment xml:lang="en">This is the root concept for the User branch. All sub-concepts represent a specific category of users, if necessary.</rdfs:comment>
+        <rdfs:label xml:lang="en">User</rdfs:label>
+        <rdfs:label xml:lang="it">Utente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Valine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Valine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Valine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Valina</rdfs:label>
+        <rdfs:label xml:lang="en">Valine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ValueInterval -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ValueInterval">
+        <rdfs:comment xml:lang="en">This concept enables the definition of numerical intervals of the form [lowerBound, upperBound] that can be associated with an instance of the MonitoringRule concept.</rdfs:comment>
+        <rdfs:label xml:lang="it">Intervalli</rdfs:label>
+        <rdfs:label xml:lang="en">Value Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VealFattyWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VealFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Veal Fatty White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Grassa di Vitello</rdfs:label>
+        <rdfs:label xml:lang="en">Veal Fatty White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VealLeanWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VealLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Veal Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra di Vitello</rdfs:label>
+        <rdfs:label xml:lang="en">Veal Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetableBasedBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetableBasedBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetable Based Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande di Verdura</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetable Based Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetableLipid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetableLipid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vegetal Protein amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lipidi Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetable Lipids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Vegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Vegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure e Ortaggi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetables and Legumes category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vegetables and Legumes</rdfs:label>
+        <rdfs:label xml:lang="it">Verdura, Ortaggi e Legumi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetalFats -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetalFats">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalFatsAndOils"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetal Fats category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Grassi Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Fats</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetalFatsAndOils -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetalFatsAndOils">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetal Fats and Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Grassi e Oli Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Fats and Oils</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetalOils -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalFatsAndOils"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetal Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Oli Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Oils</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetalProtein -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetalProtein">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Protein"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vegetal Protein amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Proteine Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VinegarDressing -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VinegarDressing">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dressing"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vingar category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Aceto</rdfs:label>
+        <rdfs:label xml:lang="en">Vinegar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Violation -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Violation">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#hasViolationRule"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#hasViolationUser"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#hasViolationLevel"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This concept represents violations associated with a specific user. Instances of the Violation concept can be the result of reasoning activities provided by third-party applications.</rdfs:comment>
+        <rdfs:label xml:lang="en">Violation</rdfs:label>
+        <rdfs:label xml:lang="it">Violazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ViolationInterval -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ViolationInterval">
+        <rdfs:comment xml:lang="en">This concept is used for defining tollerances associated with Violation instances. These tollerances can be used for computing the gravity of each violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">Intervalli di Violazione</rdfs:label>
+        <rdfs:label xml:lang="en">Violation Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Vitamin -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Vitamin">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Vitamin category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminA -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminA">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin A amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin A</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminB1 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminB1">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin B1 amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin B1</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminB12 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminB12">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin B12 amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin B12</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminB2 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminB2">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin B2 amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin B2</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminB6 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminB6">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin B6 amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin B6</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminC -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminC">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin C amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin C</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminD -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminD">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin D amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin D</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina D</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminE -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminE">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin E amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin E</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina E</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VolunteerActivities -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VolunteerActivities">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Volunteer Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; di Volontariato</rdfs:label>
+        <rdfs:label xml:lang="en">Volunteer Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Walking -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Walking">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Walking category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Camminare</rdfs:label>
+        <rdfs:label xml:lang="en">Walking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WaterActivities -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WaterActivities">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Water Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; Acquatiche</rdfs:label>
+        <rdfs:label xml:lang="en">Water Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WaterBeverage -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WaterBeverage">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Water category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acqua</rdfs:label>
+        <rdfs:label xml:lang="en">Water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Week -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Week">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Timespan"/>
+        <rdfs:label xml:lang="it">Settimana</rdfs:label>
+        <rdfs:label xml:lang="en">Week</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WheatFour -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WheatFour">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Flour"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Wheat Flour category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Farine Raffinate</rdfs:label>
+        <rdfs:label xml:lang="en">Wheat Flour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WhiteBread -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WhiteBread">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Bread"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the White Bread category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pane Comune</rdfs:label>
+        <rdfs:label xml:lang="en">White Bread</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca</rdfs:label>
+        <rdfs:label xml:lang="en">White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Flour"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Whole Wheat Four category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Farine Integrali</rdfs:label>
+        <rdfs:label xml:lang="en">Whole Wheat Four</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Wine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Wine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Wine category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Vino</rdfs:label>
+        <rdfs:label xml:lang="en">Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WinterActivities -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WinterActivities">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Activity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Winter Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attivita&apos; Invernali</rdfs:label>
+        <rdfs:label xml:lang="en">Winter Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Yogurt -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Yogurt">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt"/>
+        <activeCategory>1</activeCategory>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Yogurt category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yogurt</rdfs:label>
+        <rdfs:label xml:lang="it">Yogurt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Zinc -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Zinc">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Zinc amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Zinc</rdfs:label>
+        <rdfs:label xml:lang="it">Zinco</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
